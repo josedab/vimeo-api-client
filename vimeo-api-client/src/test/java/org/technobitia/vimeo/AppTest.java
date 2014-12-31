@@ -1,4 +1,4 @@
-package org.technobitia.vimeo_api_client;
+package org.technobitia.vimeo;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
