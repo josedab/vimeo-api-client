@@ -6,10 +6,11 @@ import java.util.List;
 import com.google.common.collect.Lists;
 
 public class Video {
-    
+
     private String name;
     private String description;
-    private Date publishedAt;
+    private Date createdTime;
+    private Date modifiedTime;
     private User user;
     private String status;
     private String link;
@@ -26,6 +27,46 @@ public class Video {
 
     public Video() {
         tags = Lists.newArrayList();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Date getCreatedTime() {
+        return createdTime;
+    }
+
+    public void setCreatedTime(Date createdTime) {
+        this.createdTime = createdTime;
+    }
+
+    public Date getModifiedTime() {
+        return modifiedTime;
+    }
+
+    public void setModifiedTime(Date modifiedTime) {
+        this.modifiedTime = modifiedTime;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public String getStatus() {
@@ -76,44 +117,12 @@ public class Video {
         this.height = height;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getContentRating() {
         return contentRating;
     }
 
     public void setContentRating(String contentRating) {
         this.contentRating = contentRating;
-    }
-
-    public Date getPublishedAt() {
-        return publishedAt;
-    }
-
-    public void setPublishedAt(Date publishedAt) {
-        this.publishedAt = publishedAt;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public int getViewCount() {
